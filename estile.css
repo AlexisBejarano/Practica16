@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	font-size: 14px;
+
+}
+* {
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 70px
+}
+h3 {
+	font-size: 50px;
+}
+/* ---------------------------------------------------------------------------*/
+.textotop {
+	position: absolute;
+	margin-top: 9em;
+	margin-left: 12em;
+	text-align: center;
+}
+
+
+.texttopouno {
+	font-family: Poor Richard;
+}
+
+
+.texttopdos {
+	font-family: Sitka Banner;
+	margin-top: -15px;	
+}
+
+
+.adornotextotop { 
+	margin-top: -13;
+	height: 35px;
+}
+
+/*
+.textotopinferior {
+	position: absolute;
+	font-size: 10em;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+}
+-------------------------------------------------------------------------------------- */ 
+#video {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+ }
+#carouselExampleIndicator {
+	z-index: -1;
+}
+.carousel.carousel-fade .carousel-item{
+	position: absolute;
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out 1.7s;
+    left: 0;
+    top: 0;
+
+}
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+.carousel.carousel-fade .carousel-item:first-child {
+    top: auto;
+    position: relative;
+    transition: opacity ease-out 1.7s;
+}
+.carousel.carousel-fade .carousel-item:second-child {
+    top: auto;
+    position: relative;
+    transition: opacity ease-out 1.7s;
+}
+.carousel-item .img-fluid {
+    margin: 0 auto;
+}
